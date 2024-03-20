@@ -7,42 +7,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-    <title>인라 아님미다</title>
+    <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <style>
-       body {
+        body {
             margin: 0;
-            background-color: #222222;
-            color: #e0e0e0;
             font-family: 'Gamja Flower', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            background: #222222 url('background.jpg') center/cover no-repeat;
+            backdrop-filter: blur(7px);
+            -webkit-backdrop-filter: blur(7px);
+            color: #e0e0e0;
         }
+
+        .truculenta-uniquifier> {
+            font-family: "Truculenta", sans-serif;
+            font-optical-sizing: auto;
+        }
+
         .center-content {
             text-align: center;
         }
+
         .rounded-box {
             background-color: #333333;
             border-radius: 20px;
-            display: inline-block;
             padding: 30px;
             color: #f0f0f0;
+            display: inline-block;
         }
-        a {
+
+        .rounded-box a {
             text-decoration: none;
             color: #81D4FA;
+            margin-right: 10px;
         }
-        img {
+
+        .rounded-box img {
             transition: transform 0.2s;
         }
-        img:hover {
+
+        .rounded-box img:hover {
             transform: scale(1.2);
         }
+
         .gamja-flower-regular {
-            font-family: "Gamja Flower", sans-serif;
-            font-weight: 400;
-            font-style: normal;
+            font-size: 27px;
+        }
+
+        .custom-font {
+            font-family: "Truculenta", sans-serif;
+            color: #000000;
+            font-size: 19px;
         }
     </style>
 </head>
@@ -51,20 +69,21 @@
         <div class="rounded-box">
             <div class="image-container">
                 <a href="https://youtu.be/Jn01TPF0M2Q" target="_blank"><img src="Mashiro.gif" alt=""></a>
-            <p class="gamja-flower-regular" style="font-size: 27px;">Welcome To Inla's Social Links Page! :D</p>
-
-                <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch" style="margin-right: 10px;"></a>
-                <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter" style="margin-right: 10px;"></a>
-                <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord" style="margin-right: 10px;"></a>
-                <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube" style="margin-right: 10px;"></a>
-                <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify" style="margin-right: 10px;"></a>
-                <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!" style="margin-right: 10px;"></a>
-                <a href="https://drive.google.com/drive/folders/1SKmGz8bps_oaBWMy9-a4UiYW4RwFGZgk" target="_blank"><img src="Skin.png" alt="Google Drive" style="margin-right: 10px;"></a>
-                <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar" style="margin-right: 10px;"></a>
-                <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple" style="margin-right: 10px;"></a>
-                <a href="https://kokisu.moe/u/2353" target="_blank"><img src="Kokisu.png" alt="Kokisu" style="margin-right: 10px;"></a>
-
+                <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
+                <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch"></a>
+                <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
+                <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord"></a>
+                <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube"></a>
+                <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify"></a>
+                <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!"></a>
+                <a href="https://drive.google.com/drive/folders/1SKmGz8bps_oaBWMy9-a4UiYW4RwFGZgk" target="_blank"><img src="Skin.png" alt="Google Drive"></a>
+                <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple"></a>
+                <a href="https://kokisu.moe/u/2353" target="_blank"><img src="Kokisu.png" alt="Kokisu"></a>
+                <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
+            </div>
         </div>
+        <p class="gamja-flower-regular custom-font">Email:Inla@Inlayo.xyz
+        </p>
     </div>
 </body>
 </html>
