@@ -19,6 +19,7 @@
             background: #222222 url('Background') center/cover no-repeat;   /* background.mp4 사용중이라 나중에 background 뒤에 확장자 붙히고 .mp4 아래꺼 없에면 사용가능 */
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
+            overflow: hidden;
         }
 
         .bg-video {
@@ -38,7 +39,7 @@
             
         }
         
-        .truculenta-uniquifier> {
+        .truculenta-uniquifier {
             font-family: "Truculenta", sans-serif;
             font-optical-sizing: auto;
         }
@@ -98,12 +99,17 @@
         }
 
     </style>
+    <meta property="og:title" content="Inla's Social Links Page">
+    <meta property="og:description" content="인라아님미다">
+    <meta property="og:image" content="previewimage.png">
+    <meta property="og:url" content="https://Inlayo.xyz">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <div class="bg-video">
     <video class="bg-video_content" autoplay muted loop>
     <source src="background.mp4" type="video/mp4" />
-    Your browser is not supported!
+    <p>브라우저 너무 쓰레기라 안보여요!</p>
   </video>
 </div>
     <div class="center-content">
