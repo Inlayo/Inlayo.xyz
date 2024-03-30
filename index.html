@@ -16,7 +16,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #222222 url('Background') center/cover no-repeat;   /** background.mp4 사용중이라 나중에 background 뒤에 확장자 붙히고 .mp4 아래꺼 없에면 사용가능 **/
+            background: #222222 url('Background') center/cover no-repeat;   /* background.mp4 사용중이라 나중에 background 뒤에 확장자 붙히고 .mp4 아래꺼 없에면 사용가능 */
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
         }
@@ -48,19 +48,36 @@
         }
 
         .rounded-box {
-            background-color: #333333;
+            background-color: #333333aa;
             border-radius: 20px;
             padding: 30px;
-            color: #f0f0f0;
+            color: #ffffff;
             display: inline-block;
         }
 
         .rounded-box a {
             text-decoration: none;
-            color: #81D4FA;
+            color: #ffffff;
             margin-right: 10px;
         }
 
+        .image-container_main {
+            opacity: 0.8;
+        }
+
+        .image-container_main img {
+            transition: transform 0.2s
+        }
+
+        .image-container_main img:hover {
+            transform: scale(1.2);
+        }
+
+        .image-container img {
+            opacity: 1.5;
+            border-radius: 15px;
+        }
+        
         .rounded-box img {
             transition: transform 0.2s;
         }
@@ -75,9 +92,11 @@
 
         .custom-font {
             font-family: "Truculenta", sans-serif;
-            color: #000000;
-            font-size: 20px;
+            color: #ffffff;
+            font-size: 18px;
+            opacity: 0.7;
         }
+
     </style>
 </head>
 <body>
@@ -89,20 +108,22 @@
 </div>
     <div class="center-content">
         <div class="rounded-box">
-            <div class="image-container">
+            <div class="image-container_main">
                 <a href="https://youtu.be/Jn01TPF0M2Q" target="_blank"><img src="Mashiro.gif" alt="Sakurasou no pet na kanojo youtube link"></a>
-                <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
-                <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch"></a>
-                <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
-                <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord"></a>
-                <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube"></a>
-                <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify"></a>
-                <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!"></a>
-                <a href="https://drive.google.com/drive/folders/1SKmGz8bps_oaBWMy9-a4UiYW4RwFGZgk" target="_blank"><img src="Skin.png" alt="Google Drive"></a>
-                <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple"></a>
-                <a href="https://kokisu.moe/u/2353" target="_blank"><img src="Kokisu.png" alt="Kokisu"></a>
-                <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
             </div>
+                <div class="image-container">
+                    <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
+                    <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch"></a>
+                    <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
+                    <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord"></a>
+                    <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube"></a>
+                    <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify"></a>
+                    <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!"></a>
+                    <a href="https://drive.google.com/drive/folders/1SKmGz8bps_oaBWMy9-a4UiYW4RwFGZgk" target="_blank"><img src="Skin.png" alt="Google Drive"></a>
+                    <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple"></a>
+                    <a href="https://kokisu.moe/u/2353" target="_blank"><img src="Kokisu.png" alt="Kokisu"></a>
+                    <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
+                </div>
         </div>
         <p class="gamja-flower-regular custom-font">Email:Inla@Inlayo.xyz
         </p>
