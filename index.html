@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <style>
-        /* Resetting default styles and setting up the layout */
         body {
             text-align: center;
             margin: 0;
@@ -24,7 +23,6 @@
             overflow: hidden;
         }
 
-        /* Background video styling */
         .bg-video {
             position: absolute;
             top: 0;
@@ -41,18 +39,15 @@
             object-fit: cover;
         }
 
-        /* Font styling */
         .truculenta-uniquifier {
             font-family: "Truculenta", sans-serif;
             font-optical-sizing: auto;
         }
 
-        /* Center content in the page */
         .center-content {
             text-align: center;
         }
 
-        /* Styling for rounded box containing social links */
         .rounded-box {
             text-align: center;
             background-color: #333333aa;
@@ -62,7 +57,6 @@
             display: inline-block;
         }
 
-        /* Styling for social media icons */
         .rounded-box a {
             text-align: center;
             text-decoration: none;
@@ -70,47 +64,63 @@
             margin-right: 10px;
         }
 
-        /* Styling for main image container */
         .image-container_main {
             text-align: center;
             display: flex;
             justify-content: center;
-            margin-bottom: 20px; /* Adding margin between GIF and text below */
+            margin-bottom: 20px;
         }
 
-        /* Styling for main image */
         .image-container_main img {
             text-align: center;
             border-radius: 15px;
-            width: 400px; /* Increasing GIF width */
+            width: 400px;
             opacity: 0.9;
         }
 
-        /* Styling for other images */
         .image-container img {
             text-align: center;
             border-radius: 15px;
         }
 
-        /* Hover effect for images inside rounded box */
         .rounded-box img:hover {
             text-align: center;
             transform: scale(1.2);
         }
 
-        /* Font size for main heading */
         .gamja-flower-regular {
             font-size: 27px;
         }
 
-        /* Font styling for custom text */
         .custom-font {
             font-family: "Truculenta", sans-serif;
             color: #ffffff;
             font-size: 18px;
             opacity: 0.7;
         }
+
+        .custom-font-a {
+            font-family: "Truculenta", sans-serif;
+            color: #ffffff;
+            font-size: 20px;
+        }
     </style>
+    <script>
+        // YouTube API Key
+        const apiKey = "AIzaSyADRIpUH3Yw3IqU6oeTlj84flAdasZ6rXI";
+
+        function fetchLatestVideo() {
+            fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCGbF3HympzHZF-G2W_eawAg&maxResults=1&order=date&type=video&key=${apiKey}`)
+                .then(response => response.json())
+                .then(data => {
+                    const latestVideoId = data.items[0].id.videoId;
+                    const latestVideoElement = document.getElementById("latestVideo");
+                    latestVideoElement.src = `https://www.youtube.com/embed/${latestVideoId}`;
+                })
+                .catch(error => console.error("Error fetching latest video:", error));
+        }
+        window.onload = fetchLatestVideo;
+    </script>
 </head>
 <body>
 <div class="bg-video">
@@ -121,8 +131,9 @@
 </div>
 <div class="center-content">
     <div class="rounded-box">
+        <p class="custom-font-a">latestVideo</P>
         <div class="image-container_main">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UgBKMKetNEQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            <iframe id="latestVideo" width="560" height="315" frameborder="0" allowfullscreen autoplay></iframe>
         </div>
         <div class="image-container">
             <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
