@@ -9,19 +9,22 @@
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
     <style>
+        /* Resetting default styles and setting up the layout */
         body {
+            text-align: center;
             margin: 0;
             font-family: 'Gamja Flower', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background: #222222 url('Background') center/cover no-repeat;   /* background.mp4 사용중이라 나중에 background 뒤에 확장자 붙히고 .mp4 아래꺼 없에면 사용가능 */
+            background: #222222 url('Background.jpg') center/cover no-repeat; /* Setting background */
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             overflow: hidden;
         }
 
+        /* Background video styling */
         .bg-video {
             position: absolute;
             top: 0;
@@ -29,26 +32,29 @@
             height: 100%;
             width: 100%;
             z-index: -1;
-            opacity: 0.15;
+            opacity: 0.5;
         }
 
         .bg-video_content {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            
         }
-        
+
+        /* Font styling */
         .truculenta-uniquifier {
             font-family: "Truculenta", sans-serif;
             font-optical-sizing: auto;
         }
 
+        /* Center content in the page */
         .center-content {
             text-align: center;
         }
 
+        /* Styling for rounded box containing social links */
         .rounded-box {
+            text-align: center;
             background-color: #333333aa;
             border-radius: 20px;
             padding: 30px;
@@ -56,40 +62,48 @@
             display: inline-block;
         }
 
+        /* Styling for social media icons */
         .rounded-box a {
+            text-align: center;
             text-decoration: none;
             color: #ffffff;
             margin-right: 10px;
         }
 
+        /* Styling for main image container */
         .image-container_main {
-            opacity: 0.6;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px; /* Adding margin between GIF and text below */
         }
 
+        /* Styling for main image */
         .image-container_main img {
-            transition: transform 0.2s
+            text-align: center;
+            border-radius: 15px;
+            width: 400px; /* Increasing GIF width */
+            opacity: 0.9;
         }
 
-        .image-container_main img:hover {
-            transform: scale(1.2);
-        }
-
+        /* Styling for other images */
         .image-container img {
-            border-radius: 15px;
-        }
-        
-        .rounded-box img {
+            text-align: center;
             border-radius: 15px;
         }
 
+        /* Hover effect for images inside rounded box */
         .rounded-box img:hover {
+            text-align: center;
             transform: scale(1.2);
         }
 
+        /* Font size for main heading */
         .gamja-flower-regular {
             font-size: 27px;
         }
 
+        /* Font styling for custom text */
         .custom-font {
             font-family: "Truculenta", sans-serif;
             color: #ffffff;
@@ -97,41 +111,35 @@
             opacity: 0.7;
         }
     </style>
-    <meta property="og:title" content="Inla's Social Links Page">
-    <meta property="og:description" content="인라아님미다">
-    <meta property="og:image" content="https://Inlayo.xyz/previewimage.png">
-    <meta property="og:url" content="https://Inlayo.xyz">
-    <meta property="og:type" content="website">
 </head>
 <body>
-    <div class="bg-video">
+<div class="bg-video">
     <video class="bg-video_content" autoplay muted loop>
-    <source src="background2.mp4" type="video/mp4" />
-    <p>브라우저 너무 쓰레기라 안보여요!</p>
-  </video>
+        <source src="background2.mp4" type="video/mp4" />
+        <p>Your browser does not support video!</p>
+    </video>
 </div>
-    <div class="center-content">
-        <div class="rounded-box">
-            <div class="image-container_main">
-                <a href="https://youtu.be/Jn01TPF0M2Q" target="_blank"><img src="MashiroSad.gif" alt="Sakurasou no pet na kanojo youtube link"></a>
-            </div>
-                <div class="image-container">
-                    <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
-                    <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch"></a>
-                    <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
-                    <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord"></a>
-                    <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube"></a>
-                    <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!"></a>
-                    <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify"></a>
-                    <a href="https://inlayo.xyz/skins" target="_blank"><img src="Skin.png" alt="Skins"></a>
-                    <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
-                    <a href="https://osu.gatari.pw/u/30336" target="_blank"><img src="Gatari.png" alt="Gatari"></a>
-                    <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple"></a>
-                    <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
-                </div>
+<div class="center-content">
+    <div class="rounded-box">
+        <div class="image-container_main">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/UgBKMKetNEQ?autoplay=1" frameborder="0" allowfullscreen></iframe>
         </div>
-        <p class="gamja-flower-regular custom-font">Email:Inla@Inlayo.xyz
-        </p>
+        <div class="image-container">
+            <p class="gamja-flower-regular">Welcome To My Social Links Page! :D</p>
+            <a href="https://www.twitch.tv/inla2433" target="_blank"><img src="Twitch.png" alt="Twitch"></a>
+            <a href="https://twitter.com/Inla2433" target="_blank"><img src="Twitter.png" alt="Twitter"></a>
+            <a href="https://discord.gg/BuAc868jv5" target="_blank"><img src="Discord.png" alt="Discord"></a>
+            <a href="https://www.youtube.com/@Inla2433" target="_blank"><img src="Youtube.png" alt="YouTube"></a>
+            <a href="https://osu.ppy.sh/users/27692994" target="_blank"><img src="osu.png" alt="osu!"></a>
+            <a href="https://mutualify.stanr.info/users/27692994" target="_blank"><img src="Mutualify.png" alt="Mutualify"></a>
+            <a href="https://inlayo.xyz/skins" target="_blank"><img src="Skin.png" alt="Skins"></a>
+            <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
+            <a href="https://osu.gatari.pw/u/30336" target="_blank"><img src="Gatari.png" alt="Gatari"></a>
+            <a href="https://ripple.moe/u/145486" target="_blank"><img src="Ripple.png" alt="Ripple"></a>
+            <a href="https://redstar.moe/u/1353" target="_blank"><img src="Redstar.png" alt="Redstar"></a>
+        </div>
     </div>
+    <p class="gamja-flower-regular custom-font">Email: Inla@Inlayo.xyz</p>
+</div>
 </body>
 </html>
